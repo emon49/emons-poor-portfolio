@@ -1,6 +1,12 @@
 /* Shared Styles */
+/* * {
+  margin: 0px;
+  padding: px;
+} */
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: px;
 }
 
 .text-primary {
@@ -17,11 +23,29 @@ body {
   padding: 15px 35px;
 }
 
+.section-title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section-description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  /* line-height: 30px; 166.667% */
+}
+main section {
+  margin-top: 80px;
+}
+
 /* Nav related styles */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 150px;
 }
 .nav-title {
   font-family: Open Sans;
@@ -39,5 +63,161 @@ nav li {
 }
 nav a {
   text-decoration: none;
+  /* color: #474747; */
+  color: #ffffff;
+}
+/* Header related style */
+
+.header {
+ /* height: 100vh; */
+  background-color: #141414;
+  color: #ffffff;
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, center left;
+  background-size: 430px, 63px;
+}
+
+.banner {
+  padding: 0px 30px 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .profile-picture {
+  width: 270px;
+}
+.banner-greeting {
+  /* font-size: 25px; */
+}
+.banner-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.banner-content {
+  max-width: 500px;
+}
+
+/* Main Section Styles */
+
+main {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+/* About Section Design */
+.about {
+  padding: 30px 130px;
+  border-radius: 10px;
+  background: #5b77f660;
+  margin: 80px 0px;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.into-title {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.info-description {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* What I do section styles */
+#what-i-do-description {
+  padding: 30px 150px;
+}
+
+.skill-container {
+  display: flex;
+  text-align: center;
+  gap: 24px;
+}
+
+.skill {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-title {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.skill-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* My experince styles */
+.resume-container {
+  display: flex;
+  gap: 100px;
+}
+.resume-column-title {
   color: #474747;
+  font-size: 30px;
+  font-weight: 700;
+}
+.resume-item-title {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+}
+.resume-item-institute {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+}
+.resume-item-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  width: 511px;
+}
+.resume-container hr {
+  margin-top: 26px;
+}
+.download-cv {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+footer {
+  display: flex;
+  gap: 100px;
+  background-color: #c1ccfc;
+  padding: 70px 200px 74px;
+}
+.footer-column {
+  width: 50%;
+}
+
+.social-links a {
+  margin-right: 25px;
+}
+.contact input,
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 18px 35px;
+  color: #757575;
+  border: 0px;
+  border-radius: 5px;
+  background: #fff;
+  width: 80%;
 }
